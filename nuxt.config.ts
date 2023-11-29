@@ -10,6 +10,10 @@ export default defineNuxtConfig({
   ],
   site: {
     trailingSlash: true,
+    url: 'https://example.com',
+    name: 'Awesome Site',
+    description: 'Welcome to my awesome site!',
+    defaultLocale: 'en',
   },
   // linkChecker: {
   //   excludeLinks: [  "/help/10/**"],
