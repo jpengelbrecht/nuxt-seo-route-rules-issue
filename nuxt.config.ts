@@ -1,9 +1,3 @@
-import svgLoader from "vite-svg-loader";
-import appConfig from "./app.config";
-import { sentryVitePlugin } from "@sentry/vite-plugin";
-import { PushContentfulFetch } from "./contentConfigFetch";
-import NodeModulesPolyfills from "@esbuild-plugins/node-modules-polyfill";
-
 export default defineNuxtConfig({
   modules: [
     "@nuxtseo/module",
@@ -27,10 +21,6 @@ export default defineNuxtConfig({
   // },
   // Need to do this to enable HMR during dev with tailwind
  
-  robots: {
-    // provide simple disallow rules for all robots `user-agent: *`
-    disallow: ["/app/"],
-  },
   
   routeRules: {
     "/maintenance/": { index: false },
@@ -47,7 +37,7 @@ export default defineNuxtConfig({
   devServer: {
     port: 8080,
   },
-  // devtools: { enabled: true },
+  devtools: { enabled: true },
 
 
 });
