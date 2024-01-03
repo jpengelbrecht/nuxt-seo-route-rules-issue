@@ -1,5 +1,6 @@
 export default defineNuxtConfig({
   modules: [
+    "@nuxt/devtools",
     "@nuxtseo/module",
   ],
   site: {
@@ -37,7 +38,7 @@ export default defineNuxtConfig({
   devServer: {
     port: 8080,
   },
-  devtools: { enabled: true },
 
+  devtools: { enabled: true },
 
 });
