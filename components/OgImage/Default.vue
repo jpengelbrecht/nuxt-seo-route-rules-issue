@@ -7,7 +7,7 @@ defineOptions({
 // const props = defineProps({
 //   url: {
 //     type: String,
-//     default: "Push Security",
+//     default: "",
 //   },
 // });
 withDefaults(
@@ -17,14 +17,15 @@ withDefaults(
     height?: number;
   }>(),
   {
-    url: null,
+    url: "",
+    width: 0,
+    height: 0
   },
 );
 </script>
 
 <template>
   <div class=" flex flex-col justify-center bg-[#212121]">
- 
     <img  :src="url" :height="height" :width="width" />
     <!-- <img class="w-[900px] pl-[100px]" :src="url" /> -->
   </div>
