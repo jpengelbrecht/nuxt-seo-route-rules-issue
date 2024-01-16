@@ -1,15 +1,17 @@
 export default defineNuxtConfig({
   modules: [
-    "@nuxt/devtools",
-    "@nuxtseo/module",
+    "@nuxt/content",
+    "@nuxtjs/storybook",
+    // "@nuxt/devtools",
+    // "@nuxtseo/module",
   ],
-  site: {
-    trailingSlash: true,
-    url: 'https://example.com',
-    name: 'Awesome Site',
-    description: 'Welcome to my awesome site!',
-    defaultLocale: 'en',
-  },
+  // site: {
+  //   trailingSlash: true,
+  //   url: 'https://example.com',
+  //   name: 'Awesome Site',
+  //   description: 'Welcome to my awesome site!',
+  //   defaultLocale: 'en',
+  // },
   // linkChecker: {
   //   excludeLinks: [  "/help/10/**"],
   //   skipInspections: [
@@ -23,14 +25,14 @@ export default defineNuxtConfig({
   // Need to do this to enable HMR during dev with tailwind
  
   
-  routeRules: {
-    "/maintenance/": { index: false },
-    "/maintenance": { index: false },
+  // routeRules: {
+  //   "/maintenance/": { index: false },
+  //   "/maintenance": { index: false },
 
-  },
-  typescript: {
-    // typeCheck: true,
-  },
+  // },
+  // typescript: {
+  //   typeCheck: true,
+  // },
   sourcemap: {
     client: true,
     server: true,
