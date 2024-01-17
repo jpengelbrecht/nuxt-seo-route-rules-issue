@@ -30,9 +30,9 @@ export default defineNuxtConfig({
   //   "/maintenance": { index: false },
 
   // },
-  // typescript: {
-  //   typeCheck: true,
-  // },
+  typescript: {
+    typeCheck: true,
+  },
   sourcemap: {
     client: true,
     server: true,
